@@ -1,5 +1,6 @@
 import webbrowser
 
+
 class Movie():
     """This class provides a way to store movie related information.
 
@@ -7,15 +8,18 @@ class Movie():
         movie_title: a string that describes the title of the movie.
         movie_storyline: a string that describes and shortens the movie story.
         poster_image: a string, URL location of the poster image.
-        trailer_youtube: a string, URL location of the trailer on youtube website.
-        movie_rating: can be one of thre valid ratings = ["G","PG","PG-13","R"].
+        trailer_youtube: a string, URL location of the trailer on
+        youtube website.
+        movie_rating: can be one of three
+        valid ratings = ["G","PG","PG-13","R"].
         movie category: is the type of movie; horror, science fiction ...
         movie director: the name of the director.
         movie duration: must be in minutes.
     """
-       
-    
-    def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube, movie_rating, movie_category, movie_director, movie_duration):
+
+    def __init__(self, movie_title, movie_storyline, poster_image,
+                 trailer_youtube, movie_rating, movie_category,
+                 movie_director, movie_duration):
         self.title = movie_title
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
@@ -35,5 +39,6 @@ class Movie():
         print ("Rating: " + self.rating)
 
     def show_trailer(self):
-        """This function is used to open the trailer of instance in web browser"""
+        """This function is used to open the trailer
+        of instance in web browser"""
         webbrowser.open(self.trailer_youtube_url)
