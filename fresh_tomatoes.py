@@ -83,7 +83,7 @@ main_page_head = '''
         });
     </script>
 </head>
-'''
+'''  # NOQA
 
 
 # The main page layout and title bar
@@ -117,7 +117,7 @@ main_page_content = '''
     </div>
   </body>
 </html>
-'''
+'''  # NOQA
 
 
 # A single movie entry html template
@@ -126,7 +126,7 @@ movie_tile_content = '''
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
 </div>
-'''
+'''  # NOQA
 
 
 def create_movie_tiles_content(movies):
